@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: inline;
+}
+.jumbotron {
+    font-size: 20px;
+   padding: 70px;
+   text-align: center;
+   color: white;
+   background-image: url('../img/apple-header.jpg'); 
+   background-attachment: fixed;
+   background-size: cover;
+   background-position:0px;
+   overflow: hidden;
+}
+.header-jumbotron {
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+}
+.subheader-jumbotron {
+    font-family: 'PT Serif', serif;
+}
+nav {
+    background-color: #000000;
+    padding: 9px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    font-weight: bold;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+}
+main {
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+#content {
+    width: 75%;
+    padding: 0 50px;
+}
+aside {
+    width: 25%;
+}
+.card {
+    box-shadow: 3px 8px 15px 1px rgba(0, 0, 0, 0.2);
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.image-article {
+    flex-basis: 30%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+.product header {
+    text-align: center;
+}
+.product img {
+    width: 200px;
+}
+.text-source {
+    color: grey;
+}
+.text-article {
+    text-align: left;
+}
+.continue-reading {
+    text-align: left;
+    text-decoration-line: underline;
+}
+.continue-reading:hover {
+    cursor: pointer;
+}
+.price-before {
+    color: red;
+    text-decoration-line: line-through;
+}
+.price-after {
+    margin-top: -18px;
+}
+.button-buy {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 250px;
+	font: inherit;
+	cursor: pointer;
+    transition: 0.5s;
+}
+.button-buy:hover {
+    background-color: #323232;
+    transform: translateY(-3px);
+}
+.button-add {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    width: 250px;
+	font: inherit;
+	cursor: pointer;
+    transition: 0.5s;
+}
+.button-add:hover {
+    background-color: #686868;
+    transform: translateY(2px);
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+    img {
+        flex-basis: 30%;
+        width: 200px;
+        padding: 10px;
+    }
+    nav li {
+        margin-right: 15px;
+    }
+}
