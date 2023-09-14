@@ -11,7 +11,7 @@
         <!-- Hyperlink Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=PT+Serif&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans&family=PT+Serif&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -27,18 +27,34 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="navbar-dropdown">
+                <div class="dropdown">
+                  <button class="dropbtn">Menu
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#jumbotron">Home</a>
+                    <a href="#product">Product</a>
+                    <a href="#article">Article</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                </div>
+            </div>
         </header>
 
         <main>
             <div id="content">
                 <article id="article" class="card">
-                    <h2>Setelah lama dinanti, iPhone 15 resmi dirilis!</h2>
-                    <img src="assets/img/iphone15-display.jpg" class="image-article">
+                    <h2 class="article-header">Setelah lama dinanti, iPhone 15 resmi dirilis!</h2>
                     <p class="text-source">Sumber : CNN Indonesia</p>
+                    <img src="assets/img/iphone15-display.jpg" class="image-article">
                     <p class="text-article"><span style="font-weight: bold;">Jakarta, CNN Indonesia</span> - Apple resmi merilis iPhone 15 dengan berbagai pembaruan spek, mulai dari USB Type-C hingga tombol action yang dapat dikustomisasi, dengan harga yang tak berubah.<br><br>
                         Peluncuran seri terbaru ini dilakukan oleh CEO Apple Tim Cook dan timnya dalam event 'Wonderlust', yang dihelat dari markas mereka di Cupertino, California, AS.<br><br>
                         Gelaran ini ditayangkan secara langsung dari berbagai media live streaming Apple, Rabu (13/9) mulai pukul 00.00 WIB.</p>
-                    <h4 class="continue-reading">Baca selengkapnya</h4>
+                    <div class="continue-reading">
+                        <a href="https://shorturl.at/iluVX" class="continue-reading">Baca selengkapnya</a>
+                    </div>
                 </article>
             </div>
         
@@ -47,10 +63,24 @@
                         <header>
                             <h2>Produk lain</h2>
                             <figure>
-                                <img src="assets/img/iphone-product.jpg">
+                                <img src="assets/img/iphone-product.jpg" class="product-display">
                                 <h5 class="price-before">Rp 15.999.000</h5>
                                 <h4 class="price-after">Rp 11.999.000</h4>
                                 <h2 class="product-name">iPhone 13</h2>
+                            </figure>
+                            <button type="submit" class="button-buy">Beli sekarang</button>
+                            <button type="submit" class="button-add">Tambah ke keranjang</button>
+                        </header>
+                    </article>
+
+                    <article class="product card" id="product">
+                        <header>
+                            <h2>Produk lain</h2>
+                            <figure>
+                                <img src="assets/img/macbook-air-m2-product.jpg" class="product-display">
+                                <h5 class="price-before">Rp 19.999.000</h5>
+                                <h4 class="price-after">Rp 18.749.000</h4>
+                                <h2 class="product-name">Macbook Air M2</h2>
                             </figure>
                             <button type="submit" class="button-buy">Beli sekarang</button>
                             <button type="submit" class="button-add">Tambah ke keranjang</button>
