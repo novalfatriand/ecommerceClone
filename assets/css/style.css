@@ -202,7 +202,6 @@ aside {
     display: block;
   }
 
-
 footer {
     margin-top: 30px;
     padding: 20px;
@@ -213,7 +212,13 @@ footer {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    aside {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     main {
         flex-direction: column;
         padding: 20px;
